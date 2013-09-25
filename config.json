@@ -1,0 +1,33 @@
+{
+  "servers": [
+    {
+      "host": "localhost",
+      "port": 8080,
+      "options": {
+        "labels": ["http", "api"]
+      }
+    },
+    {
+      "host": "localhost",
+      "port": 8443,
+      "options": {
+        "labels": ["https", "api", "secure"]
+      }
+    }
+  ],
+  "plugins": {
+     "furball": {
+       "version": "/version",
+       "plugins": "/plugins"
+     },
+    "good": {
+      "monitor": {
+        "subscribers": {
+          "console": ["ops", "request", "log"]
+        }
+      }
+    },
+  "http_example": {},
+  "https_example": {}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "description": "Example of hapi plugins",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "hapi": "~1.11.1",
+    "http_example": "git+ssh://git@github.com:nvcexploder/http_example.git",
+    "https_example": "git+ssh://git@github.com:nvcexploder/https_example.git",
+    "furball": "~0.3.3",
+    "good": "~0.12.0"
+  }
+}
